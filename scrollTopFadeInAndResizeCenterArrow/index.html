@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- THIS IS FROM https://ufoods.co.jp/ -->
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<title>Document</title>
+</head>
+
+<body>
+	<section>
+		<div><i class="fa fa-angle-down fa-5x"></i></div>
+		<div><i class="fa fa-arrow-down fa-4x"></i></div>
+		<div><i class="fa fa-arrows-v fa-3x"></i></div>
+		<div><i class="fa fa-angle-up fa-3x"></i></div>
+	</section>
+	<!-- Button ScrollTop -->
+	<div id="top">
+		<i class="fa fa-angle-double-up"></i>
+	</div>
+
+	<script>
+		// Varibles + Section Height+ Section center icon + 
+		// Resize(Section Height+ Section center icon) + Scrolling > $scrollTopBtn(fadeIn/fadeOut) + scrollTopBtn.animateFn
+		(function ($) {
+			'use stricte';
+			// Variables
+			var $winHeight = $(window).height(),
+				$scrollTopBtn = $('#top'),
+				$icon = $('section > div i');
+			// Section Height
+			$('section div').height($winHeight);
+			// Center icon inside section
+			$icon.css('marginTop', $winHeight - $(this).height() / 2);
+			$icon.css('marginLeft', $(window).width() - $(this).width() / 2);
+			// Resize Window function
+			$(window).resize(function () {
+				$('section div').height($winHeight);
+				$icon.css('marginTop', $winHeight - $(this).height() / 2);
+				$icon.css('marginLeft', $(window).width() - $(this).width() / 2);
+			});
+			// Scrolling
+			$(window).scroll(function () {
+				// console.log($(this).scrollTop());
+				if ($(this).scrollTop() >= 450) {
+					$scrollTopBtn.fadeIn();
+				} else {
+					$scrollTopBtn.fadeOut();
+				}
+			});
+			$scrollTopBtn.on('click tap', function () {
+				$('html,body').animate({
+					scrollTop: 0
+				}, 2000);
+			});
+
+		}(jQuery));
+	</script>
+</body>
+
+</html>

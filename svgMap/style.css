@@ -1,6 +1,0 @@
-svg { height: 50vw; }
-path { fill: #d3d3d3; }
-a path { fill: #d3d3d3; transition: .6s fill; -webkit-transition: .6s fill; -moz-transition: .6s fill; -ms-transition: .6s fill; -o-transition: .6s fill; }
-a path:hover { fill: #000; }
-a image { opacity: 0.5; transition:0.6s opacity; -webkit-transition:0.6s opacity; -moz-transition:0.6s opacity; -ms-transition:0.6s opacity; -o-transition:0.6s opacity; }
-a:hover image { opacity: 1;}

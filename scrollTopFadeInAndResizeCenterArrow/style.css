@@ -1,0 +1,16 @@
+/* Reset My page */
+* { margin: 0; padding: 0; }
+
+/* Star Section Style */
+section div:first-child { background: #cff0da; }
+section div:nth-child(2) { background: #88dba3; }
+section div:nth-child(3) { background: #dadbdb; }
+section div:last-child { background: #3ac569; }
+
+/* Star Section Style */
+
+/* button Style */
+#top { font-size: 30px; position: fixed; right: 10%; bottom: 20px; cursor: pointer; display: none; }
+div i:hover { color: #5A9367; }
+
+/* end Button style */
