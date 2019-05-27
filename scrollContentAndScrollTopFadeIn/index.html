@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- THIS IS FROM https://ufoods.co.jp/ -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <p>
+                An Animated Scroll To Top Button With jQuery
+            </p>
+            <p>
+                by
+            </p>
+            <p>
+                Karen Grigoryan
+            </p>
+        </header>
+        <div class="left">
+            <ul>
+                <li>
+                    <a class="link1" href="">Link 1</a>
+                </li>
+                <li>
+                    <a class="link2" href="">Link 2</a>
+                </li>
+                <li>
+                    <a class="link3" href="">Link 3</a>
+                </li>
+            </ul>
+        </div>
+        <div class="right">
+            <h2 id="h1">
+                HEADING 1
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pellentesque velit nec blandit pharetra.
+                Donec ornare, massa non congue fermentum, tellus turpis congue nisi, non pharetra nisi orci vel nisi.
+                Nam sed vestibulum augue. Morbi vestibulum, ante
+                sed interdum ultricies, risus nibh consequat tortor, non cursus ante justo in turpis. Sed nec diam
+                ultrices, venenatis tortor at, eleifend tellus. Donec id ornare tortor. Cras rutrum vel tortor suscipit
+                fermentum. Sed molestie neque ultrices, consequat
+                risus id, suscipit enim. Duis arcu nibh, interdum nec est ut, gravida molestie urna. Integer quam ante,
+                aliquet a pretium vitae, tempor vitae diam. Maecenas eros risus, fermentum vitae congue interdum,
+                pulvinar non leo. Suspendisse sit amet dignissim
+                massa, ac ullamcorper urna. In hac habitasse platea dictumst. Cras tincidunt orci lorem, eget placerat
+                dui consectetur vel. Donec convallis in dolor quis laoreet. Nunc quis fringilla tellus. Interdum et
+                malesuada fames ac ante ipsum primis in faucibus.
+                Nullam congue felis ut lectus porttitor faucibus. Curabitur vitae lorem vestibulum, blandit dui at,
+                luctus justo. Morbi lectus eros, faucibus luctus feugiat commodo, lobortis sed nulla. Fusce et fermentum
+                ante. Vivamus consequat varius sem, eget
+                hendrerit lectus tempus ac. In hac habitasse platea dictumst. Cras imperdiet elit id auctor tincidunt.
+                Morbi eu leo eros. Etiam ultricies ornare adipiscing. Mauris interdum eleifend congue. Curabitur eu ante
+                sed turpis fermentum iaculis sed vitae
+                nibh. Duis sapien tellus, laoreet at dignissim non, congue id nisi. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Fusce pellentesque velit nec blandit pharetra. Donec ornare, massa non
+                congue fermentum, tellus turpis congue nisi, non
+                pharetra nisi orci vel nisi. Nam sed vestibulum augue. Morbi vestibulum, ante sed interdum ultricies,
+                risus nibh consequat tortor, non cursus ante justo in turpis. Sed nec diam ultrices, venenatis tortor
+                at, eleifend tellus. Donec id ornare tortor.
+                Cras rutrum vel tortor suscipit fermentum. Sed molestie neque ultrices, consequat risus id, suscipit
+                enim. Duis arcu nibh, interdum nec est ut, gravida molestie urna. Integer quam ante, aliquet a pretium
+                vitae, tempor vitae diam. Maecenas eros risus,
+                fermentum vitae congue interdum, pulvinar non leo. Suspendisse sit amet dignissim massa, ac ullamcorper
+                urna. In hac habitasse platea dictumst. Cras tincidunt orci lorem, eget placerat dui consectetur vel.
+                Donec convallis in dolor quis laoreet.
+                Nunc quis fringilla tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam congue
+                felis ut lectus porttitor faucibus. Curabitur vitae lorem vestibulum, blandit dui at, luctus justo.
+                Morbi lectus eros, faucibus luctus feugiat
+                commodo, lobortis sed nulla. Fusce et fermentum ante. Vivamus consequat varius sem, eget hendrerit
+                lectus tempus ac. In hac habitasse platea dictumst. Cras imperdiet elit id auctor tincidunt. Morbi eu
+                leo eros. Etiam ultricies ornare adipiscing.
+                Mauris interdum eleifend congue. Curabitur eu ante sed turpis fermentum iaculis sed vitae nibh. Duis
+                sapien tellus, laoreet at dignissim non, congue id nisi.
+            </p>
+            <h2 id="h2">
+                HEADING 2
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pellentesque velit nec blandit pharetra.
+                Donec ornare, massa non congue fermentum, tellus turpis congue nisi, non pharetra nisi orci vel nisi.
+                Nam sed vestibulum augue. Morbi vestibulum, ante
+                sed interdum ultricies, risus nibh consequat tortor, non cursus ante justo in turpis. Sed nec diam
+                ultrices, venenatis tortor at, eleifend tellus. Donec id ornare tortor. Cras rutrum vel tortor suscipit
+                fermentum. Sed molestie neque ultrices, consequat
+                risus id, suscipit enim. Duis arcu nibh, interdum nec est ut, gravida molestie urna. Integer quam ante,
+                aliquet a pretium vitae, tempor vitae diam. Maecenas eros risus, fermentum vitae congue interdum,
+                pulvinar non leo. Suspendisse sit amet dignissim
+                massa, ac ullamcorper urna. In hac habitasse platea dictumst. Cras tincidunt orci lorem, eget placerat
+                dui consectetur vel. Donec convallis in dolor quis laoreet. Nunc quis fringilla tellus. Interdum et
+                malesuada fames ac ante ipsum primis in faucibus.
+                Nullam congue felis ut lectus porttitor faucibus. Curabitur vitae lorem vestibulum, blandit dui at,
+                luctus justo. Morbi lectus eros, faucibus luctus feugiat commodo, lobortis sed nulla. Fusce et fermentum
+                ante. Vivamus consequat varius sem, eget
+                hendrerit lectus tempus ac. In hac habitasse platea dictumst. Cras imperdiet elit id auctor tincidunt.
+                Morbi eu leo eros. Etiam ultricies ornare adipiscing. Mauris interdum eleifend congue. Curabitur eu ante
+                sed turpis fermentum iaculis sed vitae
+                nibh. Duis sapien tellus, laoreet at dignissim non, congue id nisi. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Fusce pellentesque velit nec blandit pharetra. Donec ornare, massa non
+                congue fermentum, tellus turpis congue nisi, non
+                pharetra nisi orci vel nisi. Nam sed vestibulum augue. Morbi vestibulum, ante sed interdum ultricies,
+                risus nibh consequat tortor, non cursus ante justo in turpis. Sed nec diam ultrices, venenatis tortor
+                at, eleifend tellus. Donec id ornare tortor.
+                Cras rutrum vel tortor suscipit fermentum. Sed molestie neque ultrices, consequat risus id, suscipit
+                enim. Duis arcu nibh, interdum nec est ut, gravida molestie urna. Integer quam ante, aliquet a pretium
+                vitae, tempor vitae diam. Maecenas eros risus,
+                fermentum vitae congue interdum, pulvinar non leo. Suspendisse sit amet dignissim massa, ac ullamcorper
+                urna. In hac habitasse platea dictumst. Cras tincidunt orci lorem, eget placerat dui consectetur vel.
+                Donec convallis in dolor quis laoreet.
+                Nunc quis fringilla tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam congue
+                felis ut lectus porttitor faucibus. Curabitur vitae lorem vestibulum, blandit dui at, luctus justo.
+                Morbi lectus eros, faucibus luctus feugiat
+                commodo, lobortis sed nulla. Fusce et fermentum ante. Vivamus consequat varius sem, eget hendrerit
+                lectus tempus ac. In hac habitasse platea dictumst. Cras imperdiet elit id auctor tincidunt. Morbi eu
+                leo eros. Etiam ultricies ornare adipiscing.
+                Mauris interdum eleifend congue. Curabitur eu ante sed turpis fermentum iaculis sed vitae nibh. Duis
+                sapien tellus, laoreet at dignissim non, congue id nisi.
+            </p>
+            <h2 id="h3">
+                HEADING 3
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pellentesque velit nec blandit pharetra.
+                Donec ornare, massa non congue fermentum, tellus turpis congue nisi, non pharetra nisi orci vel nisi.
+                Nam sed vestibulum augue. Morbi vestibulum, ante
+                sed interdum ultricies, risus nibh consequat tortor, non cursus ante justo in turpis. Sed nec diam
+                ultrices, venenatis tortor at, eleifend tellus. Donec id ornare tortor. Cras rutrum vel tortor suscipit
+                fermentum. Sed molestie neque ultrices, consequat
+                risus id, suscipit enim. Duis arcu nibh, interdum nec est ut, gravida molestie urna. Integer quam ante,
+                aliquet a pretium vitae, tempor vitae diam. Maecenas eros risus, fermentum vitae congue interdum,
+                pulvinar non leo. Suspendisse sit amet dignissim
+                massa, ac ullamcorper urna. In hac habitasse platea dictumst. Cras tincidunt orci lorem, eget placerat
+                dui consectetur vel. Donec convallis in dolor quis laoreet. Nunc quis fringilla tellus. Interdum et
+                malesuada fames ac ante ipsum primis in faucibus.
+                Nullam congue felis ut lectus porttitor faucibus. Curabitur vitae lorem vestibulum, blandit dui at,
+                luctus justo. Morbi lectus eros, faucibus luctus feugiat commodo, lobortis sed nulla. Fusce et fermentum
+                ante. Vivamus consequat varius sem, eget
+                hendrerit lectus tempus ac. In hac habitasse platea dictumst. Cras imperdiet elit id auctor tincidunt.
+                Morbi eu leo eros. Etiam ultricies ornare adipiscing. Mauris interdum eleifend congue. Curabitur eu ante
+                sed turpis fermentum iaculis sed vitae
+                nibh. Duis sapien tellus, laoreet at dignissim non, congue id nisi. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Fusce pellentesque velit nec blandit pharetra. Donec ornare, massa non
+                congue fermentum, tellus turpis congue nisi, non
+                pharetra nisi orci vel nisi. Nam sed vestibulum augue. Morbi vestibulum, ante sed interdum ultricies,
+                risus nibh consequat tortor, non cursus ante justo in turpis. Sed nec diam ultrices, venenatis tortor
+                at, eleifend tellus. Donec id ornare tortor.
+                Cras rutrum vel tortor suscipit fermentum. Sed molestie neque ultrices, consequat risus id, suscipit
+                enim. Duis arcu nibh, interdum nec est ut, gravida molestie urna. Integer quam ante, aliquet a pretium
+                vitae, tempor vitae diam. Maecenas eros risus,
+                fermentum vitae congue interdum, pulvinar non leo. Suspendisse sit amet dignissim massa, ac ullamcorper
+                urna. In hac habitasse platea dictumst. Cras tincidunt orci lorem, eget placerat dui consectetur vel.
+                Donec convallis in dolor quis laoreet.
+                Nunc quis fringilla tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam congue
+                felis ut lectus porttitor faucibus. Curabitur vitae lorem vestibulum, blandit dui at, luctus justo.
+                Morbi lectus eros, faucibus luctus feugiat
+                commodo, lobortis sed nulla. Fusce et fermentum ante. Vivamus consequat varius sem, eget hendrerit
+                lectus tempus ac. In hac habitasse platea dictumst. Cras imperdiet elit id auctor tincidunt. Morbi eu
+                leo eros. Etiam ultricies ornare adipiscing.
+                Mauris interdum eleifend congue. Curabitur eu ante sed turpis fermentum iaculis sed vitae nibh. Duis
+                sapien tellus, laoreet at dignissim non, congue id nisi.
+            </p>
+        </div>
+        <footer></footer>
+        <div id="stop" class="scrollTop">
+            <span><a href="">Top</a></span>
+        </div>
+    </div>
+    <!-- main-->
+    <script>
+        // BY KAREN GRIGORYAN
+
+        $(document).ready(function () {
+                    /******************************
+                        BOTTOM SCROLL TOP BUTTON
+                     ******************************/
+
+                    // declare variable
+                    var scrollTop = $(".scrollTop");
+
+                    $(window).scroll(function () {
+                        // declare variable
+                        var topPos = $(this).scrollTop();
+
+                        // if user scrolls down - show scroll to top button
+                        if (topPos > 100) {
+                            $(scrollTop).css("opacity", "1");
+
+                        } else {
+                            $(scrollTop).css("opacity", "0");
+                        }
+
+                    }); // scroll END
+
+                    //Click event to scroll to top
+                    $(scrollTop).on('click tap', function () {
+                            $('html, body').animate({
+                                scrollTop: 0
+                            }, 800);
+                            return false;
+
+                        }); // click() scroll top EMD
+
+                        /*************************************
+                          LEFT MENU SMOOTH SCROLL ANIMATION
+                         *************************************/
+                        // declare variable
+                        var h1 = $("#h1").position();
+                        var h2 = $("#h2").position();
+                        var h3 = $("#h3").position();
+                        
+
+                        $('.link1').click(function () {
+                            $('html, body').animate({
+                                scrollTop: h1.top
+                                
+                            }, 500);
+                            $('a').removeClass('active');
+                            $('.link1').addClass('active');
+                            return false;
+
+                        }); // left menu link2 click() scroll END
+
+                        $('.link2').click(function () {
+                            $('html, body').animate({
+                                scrollTop: h2.top
+                            }, 500);
+                            $('a').removeClass('active');
+                            $('.link2').addClass('active');
+                            return false;
+
+                        }); // left menu link2 click() scroll END
+
+                        $('.link3').click(function () {
+                            $('html, body').animate({
+                                scrollTop: h3.top
+                            }, 500);
+                            $('a').removeClass('active');
+                            $('.link3').addClass('active');
+                            return false;
+
+                        }); // left menu link3 click() scroll END
+
+                    }); // ready() END
+    </script>
+</body>
+
+</html>
