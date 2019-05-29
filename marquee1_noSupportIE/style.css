@@ -1,0 +1,6 @@
+.marquee { display: inline-block; white-space: nowrap;  /*   animation: scrollLeft 38s linear infinite; */ padding-left: 101%; }
+.marquee:hover { animation-play-state: paused; }
+@keyframes scrollLeft {
+	0% { transform: translateX(0%); }
+	100% { transform: translateX(-100%); }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- THIS IS FROM https://ufoods.co.jp/ -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+  <div id="page">
+      <header>
+          <h1>Basic scroll top</h1>
+      </header>
+      <span id="pageYOffset">window.scrollY = <span id="position">0px</span></span>
+      <section class="section">
+          <h2>Section 1</h2>
+      </section>
+      <section class="section">
+          <h2>Section 2</h2>
+      </section>
+      <section class="section">
+          <h2>Section 3</h2>
+      </section>
+      <section class="section">
+          <h2>Section 4</h2>
+      </section>
+      <button id="goTop">top</button>
+  </div>
+
+    <script>
+      var basicScrollTop = function () {
+      // The button
+      var btnTop = document.querySelector('#goTop');
+      // Reveal the button
+      var btnReveal = function () {
+      var position = document.querySelector('#position');
+      position.innerHTML = window.scrollY + 'px';
+      if (window.scrollY >= 300) {
+      btnTop.classList.add('is-visible');
+      } else {
+      btnTop.classList.remove('is-visible');
+      }
+      }
+      // Smooth scroll top
+      // Thanks to => http://stackoverflow.com/a/22610562
+      var TopscrollTo = function () {
+      if(window.scrollY!=0) {
+      setTimeout(function() {
+      window.scrollTo(0,window.scrollY-30);
+      TopscrollTo();
+      }, 5);
+      }
+      }
+      // Listeners
+      window.addEventListener('scroll', btnReveal);
+      btnTop.addEventListener('click', TopscrollTo);
+
+      };
+      basicScrollTop();
+
+    </script>
+</body>
+
+</html>
