@@ -1,5 +1,8 @@
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
 @import url(https://fonts.googleapis.com/css?family=Lato:300);
+
+/* A PART */
+body { background: rgb(236, 240, 241); font-family: Lato; margin: 0; }
 .btn { width: 180px; height: 50px; margin: auto; border-radius: 6px 22px; transition: all .2s ease; box-sizing: border-box; text-align: center; color: rgb(236, 240, 241); text-transform: uppercase; letter-spacing: 2px; padding: 14px 0; overflow: hidden; }
 .btn:hover { border-radius: 22px 6px; background: rgb(46, 204, 113); cursor: pointer; }
 .btn--trees { background: rgb(39, 174, 96); }
@@ -20,4 +23,5 @@
 .section { padding: 120px 0; }
 .section--trees { background: rgb(99, 93, 75); }
 .section--stars { background: rgb(44, 62, 80); }
-body { background: rgb(236, 240, 241); font-family: Lato; margin: 0; }
+
+
