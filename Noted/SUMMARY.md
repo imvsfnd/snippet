@@ -2,3 +2,12 @@
 * [USB-DEVICE](usbdevice.md)
 * [LOCALSEVER](localsever.md)
 * [SVGMAP](svgmap.md)
+
+
+## PUG
+* [href interpolation](interpolation.md)
+
+
+## jQuery
+* [Adding/Removing Class on Hover](classByHover.md)
+
