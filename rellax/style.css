@@ -1,0 +1,9 @@
+body { margin: 0; font: 13px 'Josefin Sans', sans-serif; }
+.rellax{
+    width: 60px;
+    height: 60px;
+    background: #00F1C9;
+    border-radius: 12px;
+    margin-top: 800px;
+}
+.main { min-height: 2000px;}
