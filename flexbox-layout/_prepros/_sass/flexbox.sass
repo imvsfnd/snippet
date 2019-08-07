@@ -1,0 +1,142 @@
+body
+	margin: 0
+.flex-container
+	display: flex
+	min-height: 100vh
+	flex-direction: row
+	margin: 0
+	background-color: #6dc3c3
+	.flex-item
+		display: flex
+		justify-content: center
+		align-items: center
+		border: 10px solid #fff
+		font-size: 20px
+		text-transform: uppercase
+		&.content
+			background-color: #D7E8D4
+		&.menu
+			height: 80vh
+			background-color: #9de9ec
+		&.other, &.other1, &.other2
+			height: 80vh
+			background-color: #9ddec3
+	// --------------------------------------------------
+	&.layout01 //Menu-and-content-dynamic
+		.flex-item
+			border: none
+			&.content
+				flex: 0 0 70%
+			&.menu
+				flex: 0 0 30%
+	&.layout02 //Menu-fixed-Content-dynamic
+		.flex-item
+			border: none
+			&.content
+				flex: 0 1 calc(100% - 130px)
+			&.menu
+				// position: fixed
+				flex: 1 0 130px
+	&.layout03 //Menu-and content dynamic
+		.flex-item
+			&.content
+				flex: 0 0 70%
+			&.menu
+				height: 100vh
+				flex: 0 0 30%
+	&.layout04 //3 columns, all dynamic
+		.flex-item
+			&.content
+				flex: 0 1 70%
+				order: 2
+			&.menu
+				height: 100vh
+				flex: 0 0 15%
+				order: 1
+			&.other
+				flex: 0 0 15%
+				order: 3
+	&.layout05 //4 coulmns, all dynamic
+		.flex-item
+			&.content
+				flex: 0 1 55%
+				order: 3
+			&.menu
+				flex: 0 0 15%
+				order: 4
+			&.other1
+				flex: 0 0 15%
+				order: 1
+			&.other2
+				flex: 0 0 15%
+				order: 2
+	&.layout06 //Menu floating
+		.flex-item
+			&.menu
+				margin-left: auto
+	&.layout07 //Menu fixed, content & header dynamic
+		flex-direction: column
+		.main
+			display: flex
+			flex-direction: row
+		.flex-item
+			height: calc(90vh - 40px)
+			&.header
+				height: 10vh
+			&.menu
+				flex: 0 0 15%
+			&.content
+				flex: 0 1 70%
+			&.other
+				flex: 0 0 15%
+	&.layout07 //Menu fixed, content & header dynamic
+		flex-direction: column
+		.main
+			display: flex
+			flex-direction: row
+		.flex-item
+			height: calc(90vh - 40px)
+			&.header
+				height: 10vh
+			&.menu
+				flex: 0 0 130px
+			&.content
+				flex: 0 1 70%
+			&.other
+				flex: 0 0 15%
+
+	&.layout08 //3 columns fixed centered
+		flex-direction: column
+		.main
+			display: flex
+			flex-direction: row
+			justify-content: center
+		.flex-item
+			height: calc(90vh - 40px)
+			&.header
+				height: 10vh
+			&.menu
+				flex: 0 0 130px
+			&.content
+				flex: 0 1 100%
+			&.other
+				flex: 0 0 130px
+
+	&.layout09 //dynamic with header and footer
+		flex-direction: column
+		.main
+			display: flex
+			flex-direction: row
+			justify-content: center
+		.flex-item
+			height: calc(80vh - 60px)
+			&.header
+				height: 10vh
+			&.menu
+				flex: 0 0 130px
+			&.content
+				flex: 0 1 100%
+			&.other
+				flex: 0 0 130px
+			&.footer
+				height: 10vh
