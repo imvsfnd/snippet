@@ -1,0 +1,33 @@
+body { background-color: rgba(0, 0, 0, 0.50); }
+body.modal-open { overflow: hidden; }
+body.modal-open .modal { overflow: auto; }
+body.modal-open #modal-activity { overflow: hidden; }
+
+/*首页弹窗*/
+#modal-activity { display: block; margin-top: -25px; }
+#modal-activity .modal-dialog { width: 763px; height: 645px; background: none; margin: 50px auto; }
+#modal-activity .modal-dialog .close { position: relative; top: -631px; right: -615px; width: 65px; height: 65px; cursor: pointer; float: left; }
+#modal-activity .huodong-box { position: relative; padding: 320px 130px 120px; background: url('images/activity-modal9.png') center center no-repeat;}
+#modal-activity .huodong-box .quick-login { margin-right: 11px; margin-left: 4px; padding: 22px 22px 0; }
+.com-title { margin: 5px auto; font-size: 24px; font-weight: bold; color: #af9663; text-align: center; }
+#modal-activity .huodong-box .quick-login>div { margin-bottom: 8px; }
+#modal-activity .huodong-box .quick-login>div input { border: 1px solid #af9663; padding: 2px; }
+
+/*弹窗*/
+#modal-activity .huodong-box .huodong-box-text { width: 100%; height: 315px; overflow: hidden; float: left; }
+#modal-activity .huodong-box .huodong-box-text h3 { font-size: 16px; font-weight: bold; margin: 10px 0 0;     text-align: center; background: linear-gradient(0deg, #9968fd, #fc49af); -webkit-background-clip: text; color: transparent; }
+#modal-activity .huodong-box .huodong-box-text .text1 { height: 265px; overflow: auto; line-height: 35px; font-size: 16px; color: #fff; }
+#modal-activity .browser { position: absolute; left: 20px; top: 262px; }
+#modal-activity .browser a { width: 145px; height: 38px; }
+#modal-activity .reg-tip { width: 450px; height: 97px; margin: 0 auto; padding-top: 32px; line-height: 1.5; overflow: hidden; font-size: 16px; }
+#modal-activity .reg-tip .icon-tip { position: absolute; left: 8px; top: 8px; border: 4px solid #ed7b1a; }
+#modal-activity .reg-tip .icon-tip span { display: block; width: 44px; height: 36px; text-align: center; border: 1px solid #fff; background: #ed7b1a; color: #fff; padding-top: 8px; }
+#modal-activity .reg-tip .tishi-tip { padding: 20px 0 0 50px; height: 62px; overflow: hidden; font-size: 14px; color: #ffec8f; }
+
+/* #滚动条
+=========*/
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track-piece { margin: -2px; background-color: #eee; border-radius: 10px;}
+::-webkit-scrollbar-thumb { min-width: 150px; min-height: 150px; border-radius: 10px; background: #aaa; }
+::-webkit-scrollbar-thumb:vertical:hover { background: #555; }
+::-webkit-scrollbar-thumb:horizontal:hover { background: #555; }

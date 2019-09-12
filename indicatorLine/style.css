@@ -1,0 +1,52 @@
+body{ background-color: black; height: 98vh; display: flex; justify-content: center; align-items: center;}
+.o-page-transition_indicator {
+    height: 2px;
+    opacity: 1;
+    overflow: hidden;
+    position: relative;
+    transition: .3s ease;
+    width: 67.91111vw;
+    
+}.a-indicator {
+    height: 2px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}.a-indicator_bg {
+    background-color: hsla(0,0%,100%,.3);
+    height: 100%;
+    width: 100%;
+}
+.a-indicator_line {
+    animation-delay: 0;
+    animation-direction: normal;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-name: knight-rider;
+    animation-timing-function: cubic-bezier(.6,0,.3,1);
+    background-color: #fff;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.o-page-transition_indicator .a-indicator_line {
+    animation-delay: 0;
+    animation-direction: normal;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-name: knight-rider;
+    animation-timing-function: cubic-bezier(.6,0,.3,1);
+}
+@keyframes knight-rider {
+    0% {
+        transform: translateX(-100%)
+    }
+
+    to {
+        transform: translateX(100%)
+    }
+}

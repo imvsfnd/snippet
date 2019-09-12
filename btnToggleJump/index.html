@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+</head>
+
+<body>
+    <button class="nav-toggle-btn a-nav-toggle">
+        <span class="nav-toggle">
+            <span class="stick stick-1"></span>
+            <span class="stick stick-2"></span>
+            <span class="stick stick-3"></span>
+        </span>
+    </button>
+    <script>
+    $(".a-nav-toggle").on("click", function() {
+        $("body").hasClass("menu-opened") ? $("body").removeClass("menu-opened").addClass("menu-close") 
+      : $("body").addClass("menu-opened").removeClass("menu-close");
+    });
+
+    /*
+    $('.a-nav-toggle').on('click', function() {
+        if ($('body').hasClass('menu-opened')) {
+            $('body').removeClass('menu-opened').addClass('menu-close');
+        } else {
+            $('body').addClass('menu-opened').removeClass('menu-close');
+        }
+
+    });
+    */
+    </script>
+</body>
+
+</html>
